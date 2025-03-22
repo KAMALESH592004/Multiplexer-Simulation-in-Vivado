@@ -1,5 +1,5 @@
 # SIMULATION AND IMPLEMENTATION OF MULTIPLEXER
-
+Kamalesh V (212222060108)
 ## AIM
 To design and simulate a 4:1 Multiplexer (MUX) using Verilog HDL in four different modeling styles—Gate-Level, Data Flow, Behavioral, and Structural—and to verify its functionality through a testbench using the Vivado 2023.1 simulation environment. The experiment aims to understand how different abstraction levels in Verilog can be used to describe the same digital logic circuit and analyze their performance.
 
@@ -85,9 +85,9 @@ module mux4_to_1_gate (
     or (Y, A_and, B_and, C_and, D_and);
 endmodule
 ```
-## Simulated Output Gate Level Modelling
 
-_______ Here Paste the Simulated output  ___________
+output:!![image](https://github.com/user-attachments/assets/21c86075-3358-414f-b51d-aede748d9c1b)
+
 
 ### 4:1 MUX Data Flow Implementation
 ```verilog
@@ -106,9 +106,8 @@ module mux4_to_1_dataflow (
                (S1 & S0 & D);
 endmodule
 ```
-## Simulated Output Data Flow Modelling
+output:!![image](https://github.com/user-attachments/assets/8a59097c-907e-4ed3-8e90-f4ddbe20811d)
 
-_______ Here Paste the Simulated output  ___________
 
 ### 4:1 MUX Behavioral Implementation
 ```verilog
@@ -132,9 +131,8 @@ module mux4_to_1_behavioral (
     end
 endmodule
 ```
-## Simulated Output Behavioral Modelling
+output:![image](https://github.com/user-attachments/assets/32d83db3-7106-4d92-83bb-0e9d959e4a61)
 
-_______ Here Paste the Simulated output  ___________
 
 
 ### 4:1 MUX Structural Implementation
@@ -169,9 +167,8 @@ module mux4_to_1_structural (
     mux2_to_1 mux_final (.A(mux_low), .B(mux_high), .S(S1), .Y(Y));
 endmodule
 ```
-## Simulated Output Structural Modelling
+output:![image](https://github.com/user-attachments/assets/8ba27312-1030-4d8e-859b-ed53321d3bcc)
 
-_______ Here Paste the Simulated output  ___________
 
 ### Testbench Implementation
 ```verilog
@@ -202,6 +199,9 @@ module mux4_to_1_tb;
     end
 endmodule
 ```
+output:![image](https://github.com/user-attachments/assets/7e8764f1-2ab2-491a-9696-acf24d20b09b)
+
+
 ### SAMPLE OUTPUT
 ```verilog
 Time=0 | S1=0 S0=0 | Y_gate=0 | Y_dataflow=0 | Y_behavioral=0 | Y_structural=0
